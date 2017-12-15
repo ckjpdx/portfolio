@@ -2,3 +2,18 @@ body {
   background-image: url("../img/card-stock.jpg");
   background-size: cover;
 }
+  #jackalope{
+    position: absolute;
+  }
+  .jackalope-card {
+    top: 30%;
+    right: 50%;
+    transition: top 1s, left 1s, right 1s, transform 1s;
+    transform: translate(50%,-50%) scaleX(-1);
+  }
+  .jackalope-gallery {
+    top: 8%;
+    right: 83%;
+    transition: top 1s, left 1s, right 1s, transform 1s;
+    transform: translate(50%, -50%) scaleX(1);
+  }
