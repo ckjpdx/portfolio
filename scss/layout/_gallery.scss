@@ -1,0 +1,36 @@
+section#gallery-area {
+  text-align: center;
+  padding: 70px 0 0;
+  .gallery-group {
+    .gallery-item {
+      margin: 10px;
+      background: white;
+      img {
+        width: 100%;
+      }
+      p {
+        padding: 5px;
+      }
+    }
+  }
+}
+@media #{$tablet} {
+  section#gallery-area {
+    .gallery-group {
+      display: flex;
+      flex-flow: row wrap;
+      a {
+        width: 50%;
+      }
+    }
+  }
+}
+@media #{$desktop} {
+  section#gallery-area {
+    .gallery-group {
+      a {
+        width: 33.33%;
+      }
+    }
+  }
+}

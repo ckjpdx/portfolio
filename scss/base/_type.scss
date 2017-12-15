@@ -5,34 +5,31 @@ h1, h2, h3, p, a {
 header nav a {
   text-decoration: none;
 }
-section#card-area {
-  $base-font-em: 1em;
-  $headers: 3;
-  @for $i from 1 through $headers {
-    $this-font-size: (($headers - $i)*0.5) + $base-font-em;
-    h#{$i} {
-      font-size: $this-font-size;
+$base-font-em: 1em;
+$headers: 3;
+@for $i from 1 through $headers {
+  $this-font-size: (($headers - $i)*0.5) + $base-font-em;
+  h#{$i} {
+    font-size: $this-font-size;
     }
   }
   p {
     font-size: $base-font-em * 0.9;
   }
-}
+
 @media #{$tablet} {
-  section#card-area {
-    $base-font-em: 2em;
-    $headers: 3;
-    @for $i from 1 through $headers {
-      $this-font-size: $headers - $i + $base-font-em;
-      h#{$i} {
-        font-size: $this-font-size;
-      }
-      h1, h2 {
-        text-shadow: $engrave;
-      }
+  $base-font-em: 2em;
+  $headers: 3;
+  @for $i from 1 through $headers {
+    $this-font-size: $headers - $i + $base-font-em;
+    h#{$i} {
+      font-size: $this-font-size;
     }
-    p {
-      font-size: $base-font-em * 0.75;
+    h1, h2 {
+      text-shadow: $engrave;
     }
+  }
+  p {
+    font-size: $base-font-em * 0.75;
   }
 }
