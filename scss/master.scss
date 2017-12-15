@@ -1,2 +1,3 @@
-@import "base/reset";
+@import "abstract/variables";
+@import "base/reset", "base/type";
 @import  "layout/main", "layout/header", "layout/gallery", "layout/footer", "layout/card-area";

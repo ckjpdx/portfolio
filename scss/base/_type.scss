@@ -1,0 +1,34 @@
+h1, h2, h3, p {
+  font-family: 'Cutive Mono', monospace;
+}
+h1 {
+  text-shadow: $engrave;
+}
+section.card-area {
+  $base-font-em: 1em;
+  $headers: 3;
+  @for $i from 1 through $headers {
+    $this-font-size: $headers - $i + $base-font-em;
+    h#{$i} {
+      font-size: $this-font-size;
+    }
+  }
+  p {
+    font-size: $base-font-em * 0.9;
+  }
+}
+@media #{$tablet} {
+  section.card-area {
+    $base-font-em: 2em;
+    $headers: 3;
+    @for $i from 1 through $headers {
+      $this-font-size: $headers - $i + $base-font-em;
+      h#{$i} {
+        font-size: $this-font-size;
+      }
+    }
+    p {
+      font-size: $base-font-em * 0.75;
+    }
+  }
+}

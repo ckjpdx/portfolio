@@ -1,6 +1,58 @@
 section.card-area {
   height: 100vh;
   width: 100vw;
-  background-image: url("../img/card-stock.jpg");
-  background-size: cover;
+  position: relative;
+  .card-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+  }
+  .card-top-left {
+    position: absolute;
+    top: 440px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card-top-right {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .card-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+@media #{$tablet} {
+  section.card-area {
+    display: flex;
+    justify-content: center;
+    * {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: static;
+      transform: none;
+      text-align: left;
+    }
+    .card-center {
+    }
+    .card-top-left {
+
+    }
+    .card-top-right {
+
+    }
+    .card-bottom {
+
+    }
+  }
 }

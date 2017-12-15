@@ -86,10 +86,83 @@ hr {
 input, select {
   vertical-align: middle; }
 
+h1, h2, h3, p {
+  font-family: 'Cutive Mono', monospace; }
+
+h1 {
+  text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.5), 0 2px 0 rgba(255, 255, 255, 0.75); }
+
+section.card-area h1 {
+  font-size: 3em; }
+section.card-area h2 {
+  font-size: 2em; }
+section.card-area h3 {
+  font-size: 1em; }
+section.card-area p {
+  font-size: 0.9em; }
+
+@media screen and (min-width: 768px) {
+  section.card-area h1 {
+    font-size: 4em; }
+  section.card-area h2 {
+    font-size: 3em; }
+  section.card-area h3 {
+    font-size: 2em; }
+  section.card-area p {
+    font-size: 1.5em; } }
+body {
+  background-image: url("../img/card-stock.jpg");
+  background-size: cover; }
+
+header {
+  position: fixed;
+  width: 100%; }
+  header nav {
+    display: flex;
+    padding: 20px;
+    justify-content: center; }
+    header nav a {
+      padding: 0 30px; }
+
 section.card-area {
   height: 100vh;
   width: 100vw;
-  background-image: url("../img/card-stock.jpg");
-  background-size: cover; }
+  position: relative; }
+  section.card-area .card-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center; }
+  section.card-area .card-top-left {
+    position: absolute;
+    top: 440px;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  section.card-area .card-top-right {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  section.card-area .card-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+@media screen and (min-width: 768px) {
+  section.card-area {
+    display: flex;
+    justify-content: center; }
+    section.card-area * {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: static;
+      transform: none;
+      text-align: left; } }
 
 /*# sourceMappingURL=master.css.map */
