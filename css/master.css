@@ -134,15 +134,27 @@ body {
 .jackalope-card {
   top: 30%;
   right: 50%;
-  transition: top 1s, left 1s, right 1s, transform 1s;
-  transform: translate(50%, -50%) scaleX(-1); }
+  transition: all 1s;
+  transform: translate(50%, -50%) scale(-0.5, 0.5); }
 
 .jackalope-gallery {
-  top: 8%;
+  top: 95px;
   right: 83%;
-  transition: top 1s, left 1s, right 1s, transform 1s;
-  transform: translate(50%, -50%) scaleX(1); }
+  transition: all 1s;
+  transform: translate(50%, -50%) scale(0.5, 0.5); }
 
+@media screen and (min-width: 768px) {
+  .jackalope-card {
+    top: 30%;
+    right: 50%;
+    transition: all 1s;
+    transform: translate(50%, -50%) scale(-1, 1); }
+
+  .jackalope-gallery {
+    top: 100px;
+    right: 83%;
+    transition: all 1s;
+    transform: translate(50%, -50%) scale(1, 1); } }
 header {
   position: fixed;
   width: 100%;
