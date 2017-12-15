@@ -1,15 +1,15 @@
-h1, h2, h3, p {
+h1, h2, h3, p, a {
   font-family: 'Cutive Mono', monospace;
   color: $ink;
 }
-h1 {
-  text-shadow: $engrave;
+header nav a {
+  text-decoration: none;
 }
 section.card-area {
   $base-font-em: 1em;
   $headers: 3;
   @for $i from 1 through $headers {
-    $this-font-size: $headers - $i + $base-font-em;
+    $this-font-size: (($headers - $i)*0.5) + $base-font-em;
     h#{$i} {
       font-size: $this-font-size;
     }
@@ -26,6 +26,9 @@ section.card-area {
       $this-font-size: $headers - $i + $base-font-em;
       h#{$i} {
         font-size: $this-font-size;
+      }
+      h1, h2 {
+        text-shadow: $engrave;
       }
     }
     p {

@@ -86,17 +86,17 @@ hr {
 input, select {
   vertical-align: middle; }
 
-h1, h2, h3, p {
+h1, h2, h3, p, a {
   font-family: 'Cutive Mono', monospace;
   color: #336; }
 
-h1 {
-  text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.5), 0 2px 0 rgba(255, 255, 255, 0.75); }
+header nav a {
+  text-decoration: none; }
 
 section.card-area h1 {
-  font-size: 3em; }
-section.card-area h2 {
   font-size: 2em; }
+section.card-area h2 {
+  font-size: 1.5em; }
 section.card-area h3 {
   font-size: 1em; }
 section.card-area p {
@@ -105,10 +105,16 @@ section.card-area p {
 @media screen and (min-width: 768px) {
   section.card-area h1 {
     font-size: 4em; }
+  section.card-area h1, section.card-area h2 {
+    text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25), 0 2px 0 rgba(255, 255, 255, 0.5); }
   section.card-area h2 {
     font-size: 3em; }
+  section.card-area h1, section.card-area h2 {
+    text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25), 0 2px 0 rgba(255, 255, 255, 0.5); }
   section.card-area h3 {
     font-size: 2em; }
+  section.card-area h1, section.card-area h2 {
+    text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25), 0 2px 0 rgba(255, 255, 255, 0.5); }
   section.card-area p {
     font-size: 1.5em; } }
 body {
@@ -120,15 +126,16 @@ header {
   width: 100%; }
   header nav {
     display: flex;
-    padding: 20px;
     justify-content: center; }
     header nav a {
-      padding: 0 30px; }
+      padding: 20px;
+      margin: 0 5px; }
 
 section.card-area {
   height: 100vh;
   width: 100vw;
-  position: relative; }
+  position: relative;
+  z-index: -10; }
   section.card-area .card-center {
     position: absolute;
     top: 50%;
@@ -137,7 +144,7 @@ section.card-area {
     text-align: center; }
   section.card-area .card-top-left {
     position: absolute;
-    top: 440px;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%); }
   section.card-area .card-top-right {
@@ -164,13 +171,12 @@ section.card-area {
       padding-top: 50px; }
     section.card-area .card-top-left {
       position: static;
-      top: 0;
-      left: 0;
-      transform: none; }
+      transform: none;
+      display: flex; }
+      section.card-area .card-top-left p {
+        align-self: flex-end; }
     section.card-area .card-top-right {
       position: static;
-      top: 0;
-      left: 0;
       transform: none; } }
 @media screen and (min-width: 1024px) {
   .card-top, .card-bottom {

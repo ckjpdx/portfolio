@@ -2,6 +2,7 @@ section.card-area {
   height: 100vh;
   width: 100vw;
   position: relative;
+  z-index: -10;
   .card-center {
     position: absolute;
     top: 50%;
@@ -11,7 +12,7 @@ section.card-area {
   }
   .card-top-left {
     position: absolute;
-    top: 440px;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -45,14 +46,14 @@ section.card-area {
     }
     .card-top-left {
       position: static;
-      top: 0;
-      left:0;
       transform: none;
+      display: flex;
+      p {
+        align-self: flex-end;
+      }
     }
     .card-top-right {
       position: static;
-      top: 0;
-      left:0;
       transform: none;
     }
     .card-bottom {
