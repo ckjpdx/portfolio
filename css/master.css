@@ -87,7 +87,8 @@ input, select {
   vertical-align: middle; }
 
 h1, h2, h3, p {
-  font-family: 'Cutive Mono', monospace; }
+  font-family: 'Cutive Mono', monospace;
+  color: #336; }
 
 h1 {
   text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.5), 0 2px 0 rgba(255, 255, 255, 0.75); }
@@ -155,14 +156,30 @@ section.card-area {
 @media screen and (min-width: 768px) {
   section.card-area {
     display: flex;
-    justify-content: center; }
+    flex-flow: column nowrap;
+    justify-content: space-between; }
     section.card-area * {
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      text-align: center; }
+    section.card-area .card-top {
+      padding-top: 50px; }
+    section.card-area .card-top-left {
       position: static;
-      transform: none;
-      text-align: left; } }
+      top: 0;
+      left: 0;
+      transform: none; }
+    section.card-area .card-top-right {
+      position: static;
+      top: 0;
+      left: 0;
+      transform: none; } }
+@media screen and (min-width: 1024px) {
+  .card-top, .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto; }
+
+  .card-top-right h3 {
+    text-align: right; } }
 
 /*# sourceMappingURL=master.css.map */

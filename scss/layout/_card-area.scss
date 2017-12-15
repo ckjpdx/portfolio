@@ -33,26 +33,41 @@ section.card-area {
 @media #{$tablet} {
   section.card-area {
     display: flex;
-    justify-content: center;
+    flex-flow: column nowrap;      justify-content: space-between;
     * {
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      position: static;
-      transform: none;
-      text-align: left;
+      text-align: center;
     }
     .card-center {
+      // no change
+    }
+    .card-top {
+      padding-top: 50px;
     }
     .card-top-left {
-
+      position: static;
+      top: 0;
+      left:0;
+      transform: none;
     }
     .card-top-right {
-
+      position: static;
+      top: 0;
+      left:0;
+      transform: none;
     }
     .card-bottom {
-
+      // no change
     }
+  }
+}
+@media #{$desktop} {
+  .card-top, .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .card-top-right h3 {
+    text-align: right;
   }
 }
