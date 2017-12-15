@@ -5,7 +5,7 @@ h1, h2, h3, p, a {
 header nav a {
   text-decoration: none;
 }
-section.card-area {
+section#card-area {
   $base-font-em: 1em;
   $headers: 3;
   @for $i from 1 through $headers {
@@ -19,7 +19,7 @@ section.card-area {
   }
 }
 @media #{$tablet} {
-  section.card-area {
+  section#card-area {
     $base-font-em: 2em;
     $headers: 3;
     @for $i from 1 through $headers {
