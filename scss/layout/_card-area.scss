@@ -7,12 +7,12 @@ section#card-area {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -50%);
     text-align: center;
   }
   .card-top-left {
     position: absolute;
-    top: 52%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -34,7 +34,8 @@ section#card-area {
 @media #{$tablet} {
   section#card-area {
     display: flex;
-    flex-flow: column nowrap;      justify-content: space-between;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     * {
       text-align: center;
     }
@@ -45,8 +46,7 @@ section#card-area {
       padding-top: 100px;
     }
     .card-top-left {
-      position: static;
-      transform: none;
+      top: 60%;
     }
     .card-top-right {
       position: static;
@@ -58,19 +58,23 @@ section#card-area {
   }
 }
 @media #{$desktop} {
-  .card-top, .card-bottom {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin: 0 auto;
-  }
-  .card-top-left {
-    display: flex;
-    p {
-      align-self: flex-end;
+  section#card-area {
+    .card-top, .card-bottom {
+      display: flex;
+      justify-content: space-between;
+      width: 95%;
+      margin: 0 auto;
     }
-  }
-  .card-top-right h3 {
-    text-align: right;
+    .card-top-left {
+      display: flex;
+      position: static;
+      transform: none;
+      p {
+        align-self: flex-end;
+      }
+    }
+    .card-top-right h3 {
+      text-align: right;
+    }
   }
 }

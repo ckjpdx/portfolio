@@ -9,32 +9,38 @@ body {
     z-index: -999
   }
 }
-$jackalope-size: 0.5;
-$jackalope-size-tablet: 1;
-#jackalope{
+#jackalope {
+  width: 100px;
   position: absolute;
 }
 .jackalope-card {
-  top: 30%;
-  right: 50%;
+  top: 33%;
+  left: 50%;
   transition: all 1s;
-  transform: translate(50%, -50%) scale(-#{$jackalope-size},#{$jackalope-size});
+  transform: translate(-50%, -50%) rotate(0);
 }
 .jackalope-gallery {
   top: 95px;
-  right: 83%;
+  left: 15%;
   transition: all 1s;
-  transform: translate(50%, -50%) scale(#{$jackalope-size}, #{$jackalope-size});
+  transform: translate(-50%, -50%) rotate(-360deg);
 }
 @media #{$tablet} {
+  #jackalope {
+    width: 150px;
+  }
   .jackalope-card {
-    top: 30%;
-    right: 50%;
-    transform: translate(50%, -50%) scale(-#{$jackalope-size-tablet}, #{$jackalope-size-tablet});
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
   }
   .jackalope-gallery {
     top: 100px;
-    right: 83%;
-    transform: translate(50%, -50%) scale(#{$jackalope-size-tablet}, #{$jackalope-size-tablet});
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@media #{$desktop} {
+  #jackalope {
+    width: 200px;
   }
 }
