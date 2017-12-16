@@ -1,7 +1,15 @@
+// breakpoints
 $tablet: 'screen and (min-width:768px)';
 $desktop: 'screen and (min-width:1024px)';
+
+// type
+$ink: #335;
 $engrave: 0 -2px 0 rgba(0, 0, 0, 0.25), 0 2px 0 rgba(255, 255, 255, 0.5);
 
-
-//type
-$ink: #336;
+// general
+.trbl0 {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

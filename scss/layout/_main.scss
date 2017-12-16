@@ -1,6 +1,13 @@
 body {
-  background-image: url("../img/card-stock.jpg");
-  background-size: cover;
+    background-image: url("../img/card-stock.jpg");
+  section#card-area:after {
+    content: '';
+  	position: absolute;
+    @extend .trbl0;
+  	background-image: radial-gradient(white 0%, $ink 100%);
+  	opacity: .33;
+    z-index: -999
+  }
 }
 $jackalope-size: 0.5;
 $jackalope-size-tablet: 1;
@@ -23,13 +30,11 @@ $jackalope-size-tablet: 1;
   .jackalope-card {
     top: 30%;
     right: 50%;
-    transition: all 1s;
     transform: translate(50%, -50%) scale(-#{$jackalope-size-tablet}, #{$jackalope-size-tablet});
   }
   .jackalope-gallery {
     top: 100px;
     right: 83%;
-    transition: all 1s;
     transform: translate(50%, -50%) scale(#{$jackalope-size-tablet}, #{$jackalope-size-tablet});
   }
 }

@@ -1,3 +1,9 @@
+.trbl0, body section#card-area:after {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -88,8 +94,11 @@ input, select {
 
 h1, h2, h3, p, a {
   font-family: 'Cutive Mono', monospace;
-  color: #336;
+  color: #335;
   text-decoration: none; }
+
+nav a {
+  color: white; }
 
 h1 {
   font-size: 2em; }
@@ -125,8 +134,13 @@ p {
   p {
     font-size: 1.5em; } }
 body {
-  background-image: url("../img/card-stock.jpg");
-  background-size: cover; }
+  background-image: url("../img/card-stock.jpg"); }
+  body section#card-area:after {
+    content: '';
+    position: absolute;
+    background-image: radial-gradient(white 0%, #335 100%);
+    opacity: .33;
+    z-index: -999; }
 
 #jackalope {
   position: absolute; }
@@ -147,18 +161,16 @@ body {
   .jackalope-card {
     top: 30%;
     right: 50%;
-    transition: all 1s;
     transform: translate(50%, -50%) scale(-1, 1); }
 
   .jackalope-gallery {
     top: 100px;
     right: 83%;
-    transition: all 1s;
     transform: translate(50%, -50%) scale(1, 1); } }
 header {
   position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.25); }
+  background-color: rgba(0, 0, 0, 0.5); }
   header nav {
     display: flex;
     justify-content: center; }
@@ -186,6 +198,9 @@ section#gallery-area {
 @media screen and (min-width: 1024px) {
   section#gallery-area .gallery-group a {
     width: 33.33%; } }
+footer {
+  padding: 30px; }
+
 section#card-area {
   height: 100vh;
   width: 100vw;

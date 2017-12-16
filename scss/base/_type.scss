@@ -3,6 +3,9 @@ h1, h2, h3, p, a {
   color: $ink;
   text-decoration: none;
 }
+nav a {
+  color: white;
+}
 $base-font-em: 1em;
 $headers: 3;
 @for $i from 1 through $headers {
