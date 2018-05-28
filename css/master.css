@@ -138,7 +138,6 @@ body {
   body section#card-area:after {
     content: '';
     position: absolute;
-    background-image: radial-gradient(white 0%, #335 100%);
     opacity: .33;
     z-index: -999; }
 

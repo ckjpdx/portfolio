@@ -4,7 +4,7 @@ body {
     content: '';
   	position: absolute;
     @extend .trbl0;
-  	background-image: radial-gradient(white 0%, $ink 100%);
+  	// background-image: radial-gradient(white 0%, $ink 100%);
   	opacity: .33;
     z-index: -999
   }
