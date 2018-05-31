@@ -7,14 +7,24 @@ The "business card" area serves as a landing page with basic contact information
 ## Architecture
 The card landing page section will be initially shown. When the button to view the gallery is clicked they will change visibility, and trade spaces as a result.
 
-### --> Flexbox
+### >> Flexbox
 Nav links in the fixed top of the page, the upper and lower contact details on the contact section, and the gallery cards in the portfolio section use display: flex for positioning.
 
 ## Tech Used
 jQuery 3.2.1 is used to toggle content on the site and toggle classes on the jackalope image. Sass is used to generate font sizes. CSS3 transitions are used for a smooth repositioning of the jackalope image.
 
-## Plans
-Add links to projects on gallery section.
-
-## Bugs
-Unknown.
+# Progress
+* Add photo-links to projects
+  - [x] Tiny Anthems
+  - [ ] D&D Spell Book
+  - [ ] Draftr
+  - [x] Code Shinobi
+  - [x] Pig Dice
+  - [x] Pizza Time
+  - [x] Wave Animation
+  - [x] MV Inn
+  - [x] Monty-Piethon
+  - [x] Spagett
+  - [ ] Angela Colley
+  - [ ]
+- [ ] Add social media icons to Contact section
