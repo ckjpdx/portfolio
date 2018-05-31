@@ -25,6 +25,5 @@ jQuery 3.2.1 is used to toggle content on the site and toggle classes on the jac
   - [x] MV Inn
   - [x] Monty-Piethon
   - [x] Spagett
-  - [ ] Angela Colley
-  - [ ]
+  - [x] Angela Colley
 - [ ] Add social media icons to Contact section
