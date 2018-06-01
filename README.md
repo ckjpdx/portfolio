@@ -17,7 +17,7 @@ jQuery 3.2.1 is used to toggle content on the site and toggle classes on the jac
 * Add photo-links to projects
   - [x] Tiny Anthems
   - [ ] D&D Spell Book
-  - [ ] Draftr
+  - [x] Draftr
   - [x] Code Shinobi
   - [x] Pig Dice
   - [x] Pizza Time
