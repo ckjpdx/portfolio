@@ -188,12 +188,22 @@ section#gallery-area {
   text-align: center;
   padding: 70px 0 0; }
   section#gallery-area .gallery-group .gallery-item {
+    position: relative;
     margin: 10px;
     background: white; }
     section#gallery-area .gallery-group .gallery-item img {
       width: 100%; }
     section#gallery-area .gallery-group .gallery-item p {
-      padding: 5px; }
+      padding: 5px;
+      font-size: 20px; }
+    section#gallery-area .gallery-group .gallery-item p.item-status {
+      position: absolute;
+      top: 20px;
+      right: 10px;
+      color: white;
+      font-style: italic;
+      font-size: 15px;
+      background: #323654CC; }
 
 @media screen and (min-width: 768px) {
   section#gallery-area .gallery-group {
