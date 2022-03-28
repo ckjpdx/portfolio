@@ -11,21 +11,24 @@ section#card-area {
     text-align: center;
   }
   .card-top-left {
+    // position: absolute;
+    // top: 15%;
+    // left: 5%;
     position: absolute;
-    top: 57%;
+    top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .card-top-right {
     position: absolute;
-    top: 120px;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
   .card-bottom {
     position: absolute;
-    bottom: 10px;
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -36,24 +39,17 @@ section#card-area {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    * {
-      text-align: center;
-    }
-    .card-center {
-      // no change
-    }
     .card-top {
       padding-top: 100px;
     }
     .card-top-left {
-      top: 60%;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     .card-top-right {
       position: static;
       transform: none;
-    }
-    .card-bottom {
-      // no change
     }
   }
 }

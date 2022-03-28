@@ -2,9 +2,19 @@ section#gallery-area {
   text-align: center;
   padding: 70px 0 0;
   .gallery-group {
+    display: flex;
+    flex-wrap: wrap;
+    .gallery-work-example {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;  
+      background-color: #FFFd;
+      & > * {
+        align-self: center;
+      }
+    }
     .gallery-item {
       position: relative;
-      margin: 10px;
       background: white;
       img {
         width: 100%;
@@ -17,6 +27,7 @@ section#gallery-area {
         position: absolute;
         top: 20px;
         right: 10px;
+        margin: 0;
         color: white;
         font-style: italic;
         font-size: 15px;
@@ -25,12 +36,11 @@ section#gallery-area {
     }
   }
 }
+
 @media #{$tablet} {
   section#gallery-area {
     .gallery-group {
-      display: flex;
-      flex-flow: row wrap;
-      a {
+      & > * {
         width: 50%;
       }
     }
@@ -39,9 +49,13 @@ section#gallery-area {
 @media #{$desktop} {
   section#gallery-area {
     .gallery-group {
-      a {
+      & > a {
         width: 33.33%;
       }
+      .gallery-work-example > * {
+        width: 50%;
+        margin: 60px 0;
+      }        
     }
   }
 }
