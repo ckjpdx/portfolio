@@ -116,13 +116,13 @@ h1:not(a), h2:not(a), h3:not(a), p:not(a), a:not(a) {
   margin: 30px;
 }
 
-a, .card-font {
-  font-size: 1.3em;
-  font-weight: 900;
+p a {
+  background-color: #fd88;
 }
 
-nav a {
-  color: white;
+.card-font {
+  font-size: 1.3em;
+  font-weight: 900;
 }
 
 ul, ol {
@@ -171,7 +171,7 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 @media screen and (min-width:762px) {
@@ -183,7 +183,7 @@ p {
     text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25), 0 2px 0 rgba(255, 255, 255, 0.5);
   }
 
-  a, .card-font {
+  .card-font {
     font-size: 1.5em;
   }
 
@@ -195,7 +195,7 @@ p {
     text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25), 0 2px 0 rgba(255, 255, 255, 0.5);
   }
 
-  a, .card-font {
+  .card-font {
     font-size: 1.5em;
   }
 
@@ -207,7 +207,7 @@ p {
     text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25), 0 2px 0 rgba(255, 255, 255, 0.5);
   }
 
-  a, .card-font {
+  .card-font {
     font-size: 1.5em;
   }
 
@@ -219,7 +219,7 @@ p {
     text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25), 0 2px 0 rgba(255, 255, 255, 0.5);
   }
 
-  a, .card-font {
+  .card-font {
     font-size: 1.5em;
   }
 
@@ -231,7 +231,7 @@ p {
     text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25), 0 2px 0 rgba(255, 255, 255, 0.5);
   }
 
-  a, .card-font {
+  .card-font {
     font-size: 1.5em;
   }
 
@@ -243,7 +243,7 @@ p {
     text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25), 0 2px 0 rgba(255, 255, 255, 0.5);
   }
 
-  a, .card-font {
+  .card-font {
     font-size: 1.5em;
   }
 
@@ -271,6 +271,10 @@ body section#card-area:after {
 
 .width50percent {
   width: 50%;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 #jackalope {
@@ -326,8 +330,14 @@ header nav {
 header nav a {
   padding: 10px;
   margin: 10px 5px;
+  color: white;
 }
 
+@media screen and (min-width:762px) {
+  header nav a {
+    font-size: 24px;
+  }
+}
 section#gallery-area {
   text-align: center;
   padding: 70px 0 0;
@@ -348,6 +358,11 @@ section#gallery-area .gallery-group .gallery-work-example > * {
 section#gallery-area .gallery-group .gallery-item {
   position: relative;
   background: white;
+  transition: transform 0.5s;
+}
+section#gallery-area .gallery-group .gallery-item:hover {
+  transform: scale(1.1);
+  z-index: 10;
 }
 section#gallery-area .gallery-group .gallery-item img {
   width: 100%;
