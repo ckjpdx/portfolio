@@ -16,6 +16,11 @@ section#gallery-area {
     .gallery-item {
       position: relative;
       background: white;
+      transition: transform 0.5s;
+      &:hover {
+        transform: scale(1.1);
+        z-index: 10;
+      }
       img {
         width: 100%;
       }

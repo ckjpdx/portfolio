@@ -9,7 +9,12 @@ header {
     a {
       padding: 10px;
       margin: 10px 5px;
-      // border-bottom: 2px solid $ink;
+      color: white;
     }
+  }
+}
+@media #{$tablet} {
+  header nav a {
+    font-size: 24px;
   }
 }

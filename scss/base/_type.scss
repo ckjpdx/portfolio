@@ -6,12 +6,12 @@ h1, h2, h3, p, a {
     margin: #{$margin-around-text};
   }
 }
-a, .card-font{
+p a {
+  background-color: #fd88;
+}
+.card-font{
   font-size: 1.3em;
   font-weight: 900;
-}
-nav a {
-  color: white;
 }
 ul, ol {
   text-align: left;
@@ -28,7 +28,6 @@ ul, ol {
       font-size: 1em;
       margin-bottom: 10px;
       font-family: sans-serif;
-      // font-size: 1em;
       font-weight: 100;
       text-decoration: underline;
     }
@@ -44,7 +43,7 @@ $headers: 6;
     }
   }
   p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
 @media #{$tablet} {
@@ -58,7 +57,7 @@ $headers: 6;
     h1, h2 {
       text-shadow: $engrave;
     }
-    a, .card-font {
+    .card-font {
       font-size: 1.5em;
     }
   }

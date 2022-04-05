@@ -9,9 +9,14 @@ body {
     z-index: -999
   }
 }
+// HELPER CLASSES
 .width50percent {
   width: 50%;
 }
+.no-margin {
+  margin: 0;
+}
+// JUST THE LITTLE BUNNY 
 #jackalope {
   width: 100px;
   position: absolute;
